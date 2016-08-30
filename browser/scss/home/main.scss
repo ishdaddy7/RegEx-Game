@@ -1,12 +1,46 @@
 #home {
-  fullstack-logo {
-    padding-top: 30px;
-    width: 150px;
-    margin: 0 auto;
-  }
+  padding-top: 1%;
+  color: cyan;
+  margin: 0 auto;
   h1 {
-    margin-top: 40px;
     text-align: center;
+  },
+  .list-unstyled{
+    text-align: center;
+    display: inline;
+    li {
+      display: inline;
+      padding: 0px;
+      margin: 0 auto;
+    }
+    ul {
+      display: inline;
+      padding: 0px;
+      margin: 0 auto;
+    }
+    button {
+      display: inline;
+      padding: 0px;
+      margin: 0 auto;
+    }
   }
+  h4 {
+    color: magenta !important;
+  }
+  li {
+  	margin-bottom: 10px;
+  }
+
+  #regexLogo {
+      width: 700px;
+      margin: auto;
+      display: block;
+  }
+
+  #authButtonGroup {
+      text-align:center;
+      display: block;
+  }
+
 }
 

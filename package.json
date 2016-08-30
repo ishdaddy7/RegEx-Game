@@ -1,7 +1,7 @@
 {
-  "name": "FullstackGeneratedApp",
+  "name": "RegexGame",
   "version": "1.0.0",
-  "description": "A generated project at Fullstack Academy",
+  "description": "Fullstack Academy Capstone Project by Jay Moon, Nasser Abouelazm, Sam Severance, Sean Han",
   "main": "server/start.js",
   "scripts": {
     "start": "nodemon --watch server -e js,html server/start.js",
@@ -49,6 +49,7 @@
     "karma-mocha": "^0.1.10",
     "karma-mocha-reporter": "^1.0.2",
     "lodash": "^3.9.3",
+    "ng-autofocus": "0.0.23",
     "nodemon": "^1.3.7",
     "passport": "^0.2.1",
     "passport-facebook": "^1.0.3",

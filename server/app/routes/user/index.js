@@ -55,6 +55,13 @@ router.post('/login', function(req, res, next) {
     })
     .catch(next);
 })
+router.post('/', function(req, res, next) {
+    User.create(req.body)
+    .then(function(createdUser) {
+        res.send(createdUser);
+    })
+    .catch(next);
+})
 router.param('userId', function(req, res, next, userId){
     User.findById(userId)
     .then(function(user){
@@ -96,6 +103,13 @@ router.post('/:userId/addanswer', function(req, res, next){
     .catch(next);
 })
 
+router.post('/:userId/saveScore', function(req, res, next){
+    req.user.createScore({score: req.body.score})
+    .then(function(){
+        res.sendStatus(201);
+    })
+    .catch(next);
+})
 
 
 
